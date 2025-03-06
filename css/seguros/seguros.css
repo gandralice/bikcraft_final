@@ -1,0 +1,68 @@
+.seguros-bg {
+  background-color: var(--c11);
+}
+.seguros {
+  padding: 120px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+.seguros h2 {
+  color: var(--w);
+  grid-column: 1/-1;
+}
+.seguros h2 span {
+  color: var(--p01);
+}
+.prata {
+  color: var(--c05);
+}
+.seguros-card span {
+  color: var(--c06);
+  display: block;
+  overflow: hidden;
+  text-align: right;
+}
+.seguros-card li {
+  color: var(--c04);
+  line-height: 2.5;
+  display: flex;
+  align-items: center;
+}
+.seguros-card li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(/img/icones/lista.svg);
+  margin-right: 8px;
+}
+.ouro {
+  color: var(--p01);
+}
+.seguros-card h3 {
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.seguros-card {
+  background-color: var(--c12);
+  border-radius: 4px;
+  padding: 32px 32px 32px 48px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.seguros-card ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+.btn {
+  grid-column: 1/-1;
+}
+@media (max-width: 900px) {
+  .seguros {
+    padding: 40px 20px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
