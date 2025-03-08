@@ -118,13 +118,6 @@
     font-size: 0.8rem;
   }
 }
-.fonte-1-s {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.25;
-}
 .fonte-2-l {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -233,6 +226,14 @@ a {
     padding: 8px 20px;
   }
 }
+@media (max-width: 600px) {
+  .btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 2px;
+  }
+}
 .btn.sec {
   background: var(--c10);
   color: var(--c04);
@@ -246,4 +247,25 @@ a {
   max-width: 1200px;
   padding: 0px 20px;
   margin: 0px auto;
+}
+
+.titulo-bg {
+  background-color: var(--c11);
+}
+.titulo {
+  padding: 60px;
+}
+.titulo p {
+  color: var(--c06);
+}
+.titulo h1 {
+  color: var(--w);
+}
+.titulo h1 span {
+  color: var(--p01);
+}
+@media (max-width: 600px) {
+  .titulo {
+    padding: 20px 40px;
+  }
 }

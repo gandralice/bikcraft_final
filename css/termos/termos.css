@@ -1,0 +1,10 @@
+.termos {
+  padding: 80px 60px;
+  color: var(--c11);
+}
+.termos p {
+  max-width: 72ch;
+}
+.termos h2:nth-child(n + 2) {
+  margin-top: 24px;
+}

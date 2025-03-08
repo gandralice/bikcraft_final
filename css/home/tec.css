@@ -37,6 +37,7 @@
 .tec-topics h3 {
   margin-bottom: 8px;
   width: max-content;
+  overflow: hidden;
 }
 .tec img[src$=".jpg"] {
   height: 100%;

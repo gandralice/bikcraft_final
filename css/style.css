@@ -7,5 +7,11 @@
 @import url(home/parceiros.css);
 @import url(home/depoimento.css);
 
+@import url(bicicletas/bicicletas-li.css);
 @import url(bicicletas/bicicletas.css);
+
 @import url(seguros/seguros.css);
+@import url(seguros/vantagens.css);
+@import url(seguros/perguntas.css);
+
+@import url(termos/termos.css);

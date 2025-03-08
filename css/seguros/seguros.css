@@ -8,6 +8,9 @@
   gap: 40px;
   align-items: center;
 }
+#seguros .seguros {
+  padding-top: 0px;
+}
 .seguros h2 {
   color: var(--w);
   grid-column: 1/-1;
