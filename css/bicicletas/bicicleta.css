@@ -1,0 +1,109 @@
+.bicicleta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 40px;
+  background-color: var(--c11);
+  padding: 0px 20px 60px 20px;
+}
+.bicicleta-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.bicicleta-imgs img {
+  flex: 1;
+  min-width: 200px;
+}
+.bicicleta-imgs img:first-child {
+  min-width: 100%;
+}
+.bicicleta-cnt > p {
+  margin-bottom: 40px;
+  color: var(--c06);
+}
+.bicicleta-comprar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+.bicicleta-comprar a {
+  grid-row: span 2;
+  width: max-content;
+}
+.bicicleta-comprar span {
+  grid-column: 2;
+  overflow: hidden;
+  color: var(--c06);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid var(--c06);
+}
+.bicicleta-comprar span:first-child {
+  margin-bottom: 4px;
+}
+.bicicleta-info {
+  background-color: var(--c12);
+  border-radius: 4px;
+  padding: 40px;
+}
+.bicicleta-info1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+  gap: 24px;
+}
+.bicicleta-info1 h3 {
+  margin-bottom: 8px;
+  color: var(--c05);
+}
+.bicicleta-info1 img {
+  width: 24px;
+  margin-bottom: 4px;
+}
+.bicicleta-info1 p {
+  color: var(--c07);
+}
+.bicicleta-info > h3 {
+  margin-bottom: 32px;
+  color: var(--c05);
+}
+.bicicleta-info2 li {
+  padding: 4px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--c07);
+  border-bottom: 2px solid var(--c11);
+}
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0px 20px 40px 20px;
+  }
+  .bicicleta-imgs img:nth-child(n + 2) {
+    display: none;
+  }
+  .bicicleta-cnt > p {
+    margin-bottom: 16px;
+    max-width: 48ch;
+  }
+}
+@media (max-width: 600px) {
+  .bicicleta-info1 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .bicicleta-info1 p {
+    color: var(--c06);
+    max-width: 40ch;
+    border-bottom: 2px solid var(--c11);
+    padding-bottom: 8px;
+  }
+  .bicicleta-body .bicicletas-lista {
+    padding: 40px 0px;
+  }
+}

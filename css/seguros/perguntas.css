@@ -51,4 +51,7 @@
   .perguntas h2 {
     margin-bottom: 32px;
   }
+  .perguntas dt {
+    font-size: 1rem;
+  }
 }
