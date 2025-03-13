@@ -59,6 +59,7 @@
 .bicicleta-info1 h3 {
   margin-bottom: 8px;
   color: var(--c05);
+  overflow: hidden;
 }
 .bicicleta-info1 img {
   width: 24px;
@@ -70,6 +71,7 @@
 .bicicleta-info > h3 {
   margin-bottom: 32px;
   color: var(--c05);
+  overflow: hidden;
 }
 .bicicleta-info2 li {
   padding: 4px 0px;

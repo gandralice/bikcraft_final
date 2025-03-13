@@ -141,6 +141,7 @@ label {
   display: flex;
   gap: 8px;
   margin-bottom: 4px;
+  overflow: hidden;
 }
 .orcamento-detalhes ul img {
   width: 16px;
