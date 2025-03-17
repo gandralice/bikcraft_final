@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seguros | Bikcraft</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente.">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body id="seguros">
@@ -46,7 +47,7 @@
             <li>Suporte das 8h às 18h</li>
             <li>Cobertura estadual</li>
           </ul>
-          <a class="btn sec" href="orcamento.html">inscreva-se</a>
+          <a class="btn sec" href="orcamento.html?tipo=seguro&produto=prata">inscreva-se</a>
         </div>
         <div class="seguros-card">
           <h3 class="fonte-1-xl ouro">ouro</h3>
@@ -59,7 +60,7 @@
             <li>Desconto em parceiros</li>
             <li>Acesso ao Clube Bikcraft</li>
           </ul>
-          <a class="btn" href="orcamento.html">inscreva-se</a>
+          <a class="btn" href="orcamento.html?tipo=seguro&produto=ouro">inscreva-se</a>
         </div>
       </div>
     </div>
@@ -104,28 +105,28 @@
       <h2 class="fonte-1-xxl">perguntas frequentes<span>.</span></h2>
       <dl>
         <div>
-          <dt class="fonte-1-xl">Como aciono o seguro em caso de sinistro?</dt>
-          <dd class="fonte-2-m">Basta entrar em contato com nossa equipe e seguir as orientações.</dd>
+          <dt><button class="fonte-1-xl" aria-controls="pergunta1" aria-expanded="true">Como aciono o seguro em caso de sinistro?</button></dt>
+          <dd id="pergunta1" class="fonte-2-m ativa">Basta entrar em contato com nossa equipe e seguir as orientações.</dd>
         </div>
         <div>
-          <dt class="fonte-1-xl">Quais métodos de pagamento vocês aceitam?</dt>
-          <dd class="fonte-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista aceitamos PIX e boleto.</dd>
+          <dt><button class="fonte-1-xl" aria-controls="pergunta2" aria-expanded="false">Quais métodos de pagamento vocês aceitam?</button></dt>
+          <dd id="pergunta2" class="fonte-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista aceitamos PIX e boleto.</dd>
         </div>
         <div>
-          <dt class="fonte-1-xl">Quanto tempo leva para receber uma resposta do suporte? </dt>
-          <dd class="fonte-2-m">Nosso tempo médio de resposta é de até 24 horas em dias úteis.</dd>
+          <dt><button class="fonte-1-xl" aria-controls="pergunta3" aria-expanded="false">Quanto tempo leva para receber uma resposta do suporte?</button></dt>
+          <dd id="pergunta3" class="fonte-2-m">Nosso tempo médio de resposta é de até 24 horas em dias úteis.</dd>
         </div>
         <div>
-          <dt class="fonte-1-xl">O seguro cobre danos causados por terceiros?</dt>
-          <dd class="fonte-2-m">Sim, se incluir responsabilidade civil.</dd>
+          <dt><button class="fonte-1-xl" aria-controls="pergunta4" aria-expanded="false">O seguro cobre danos causados por terceiros?</button></dt>
+          <dd id="pergunta4" class="fonte-2-m">Sim, se incluir responsabilidade civil.</dd>
         </div>
         <div>
-          <dt class="fonte-1-xl">Posso transferir meu seguro para outra bicicleta?</dt>
-          <dd class="fonte-2-m">Sim, mas é necessário entrar em contato conosco para avaliar a transferência e possíveis ajustes na apólice.</dd>
+          <dt><button class="fonte-1-xl" aria-controls="pergunta5" aria-expanded="false">Posso transferir meu seguro para outra bicicleta?</button></dt>
+          <dd id="pergunta5" class="fonte-2-m">Sim, mas é necessário entrar em contato conosco para avaliar a transferência e possíveis ajustes na apólice.</dd>
         </div>
         <div>
-          <dt class="fonte-1-xl">Como ativar o seguro após a compra?</dt>
-          <dd class="fonte-2-m">O seguro é ativado automaticamente após a confirmação da compra.</dd>
+          <dt><button class="fonte-1-xl" aria-controls="pergunta6" aria-expanded="false">Como ativar o seguro após a compra?</button></dt>
+          <dd id="pergunta6" class="fonte-2-m">O seguro é ativado automaticamente após a confirmação da compra.</dd>
         </div>
       </dl>
     </article>
@@ -166,6 +167,7 @@
     </div>
 
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

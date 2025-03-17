@@ -265,3 +265,15 @@ button {
     padding: 20px 40px;
   }
 }
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}

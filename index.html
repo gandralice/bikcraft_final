@@ -7,12 +7,13 @@
   <title>Bikcraft</title>
 
   <meta name="description" content="Termos e Condições Bikcraft.">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="img/favicon.svg" width="32" height="32" type="image/x-icon">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -32,9 +33,9 @@
   <main class="intro-bg">
     <div class="intro container">
       <div class="intro-col1">
-        <h1 class="fonte-1-xxl">Bicicletas feitas sob medida<span>.</span></h1>
-        <p class="fonte-2-l">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, tempora. Ducimus quod eos repudiandae iure ex magnam obcaecati autem vero dicta? Dolor sapiente id autem sint!</p>
-        <a class="btn" href="bicicletas.html">Selecione a sua</a>
+        <h1 data-anime="200" class="fonte-1-xxl fadeInDown">Bicicletas feitas sob medida<span>.</span></h1>
+        <p data-anime="400" class="fonte-2-l fadeInDown">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, tempora. Ducimus quod eos repudiandae iure ex magnam obcaecati autem vero dicta? Dolor sapiente id autem sint!</p>
+        <a data-anime="600" class="btn fadeInDown" href="bicicletas.html">Selecione a sua</a>
       </div>
       <div><img src="img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta."></div>
 
@@ -177,6 +178,8 @@
       <p class="fonte-1-s">Bikcraft© Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

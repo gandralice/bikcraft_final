@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nimbus | Bikcraft</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente.">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preload" href="../css/style.min.css" as="style">
+  <link rel="stylesheet" href="../css/style.min.css">
   <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body class="bicicleta-body">
@@ -45,7 +46,7 @@
         <div class="bicicleta-cnt">
           <p class="fonte-2-m">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
           <div class="bicicleta-comprar">
-            <a class="btn" href="../orcamento.html">Comprar agora</a>
+            <a class="btn" href="../orcamento.html?tipo=bikcraft&produto=nimbus">Comprar agora</a>
             <div class="bicicleta-span">
               <span class="fonte-1-s"><img src="../img/icones/estoque.svg" alt="">12 em estoque</span>
               <span class="fonte-1-s"><img src="../img/icones/entrega.svg" alt="">Entrega em 5 dias</span>
@@ -145,6 +146,7 @@
     </div>
 
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
