@@ -279,3 +279,9 @@ button {
   transform: none;
   transition: transform 0.8s, opacity 0.8s;
 }
+.introducao-bg,
+.bicicletas-lista,
+.depoimento,
+.seguros-bg {
+  overflow: hidden;
+}
