@@ -22,3 +22,9 @@
 @import url(termos/termos.css);
 
 @import url(orcamento/orcamento.css);
+
+.fonte-1-xxl {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: aqua;
+}
